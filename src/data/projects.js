@@ -156,6 +156,65 @@ export const projects = [
     // Aucun bouton "Démo" ne doit être rendu pour ce projet (cf. AC-005 / règle de données).
   },
   {
+    id: "PRJ-005",
+    name: "Reservy",
+    type: "web",
+    featured: false,
+    status: "in-progress",
+    context:
+      "Digitaliser le processus de réservation et de pré-commande pour les cafés et restaurants.",
+    problem:
+      "Les clients ont du mal à trouver des places disponibles aux heures de pointe (matchs, soirées, week-ends) et à gérer les temps d'attente sur place ; les gérants manquent d'outils numériques centralisés pour optimiser leurs réservations et leur visibilité en ligne.",
+    solution:
+      "Plateforme découpée en deux dépôts — un backend API REST (Laravel) et un frontend SPA (React) — mettant en relation clients et gérants d'établissements, avec gestion des rôles, du menu, des réservations, des pré-commandes et des avis.",
+    targetUsers: "Clients (particuliers), gérants de cafés/restaurants et Super Admin de la plateforme",
+    features: [
+      "Authentification multi-rôles (Client, Gérant, Super Admin) avec Laravel Breeze / Sanctum",
+      "Gestion des permissions par rôle (Spatie Permission)",
+      "Profil d'établissement (nom, adresse, photos, horaires) géré par le gérant",
+      "Gestion du menu (catégories et produits avec prix) pour la pré-commande",
+      "Recherche et filtrage des établissements par ville ou nom",
+      "Réservation avec date, heure, nombre de personnes et panier de pré-commande",
+      "Dashboard Gérant en vue Kanban pour accepter/refuser les réservations",
+      "Système d'avis (notation par étoiles + commentaire) et moyenne des notes",
+      "Validation des nouveaux établissements par le Super Admin",
+    ],
+    technologies: [
+      { name: "Laravel", role: "Backend / API REST" },
+      { name: "MySQL", role: "Base de données" },
+      { name: "Laravel Sanctum / Breeze", role: "Authentification" },
+      { name: "Spatie Permission", role: "Gestion des rôles" },
+      { name: "React.js", role: "Frontend SPA" },
+      { name: "Tailwind CSS", role: "Style" },
+      { name: "Zustand / Redux", role: "Gestion d'état (panier de pré-commande)" },
+      { name: "Axios", role: "Communication avec l'API" },
+    ],
+    personalContribution: [
+      "Rédaction du cahier des charges (problématique, objectifs, Epics, User Stories)",
+      "Conception de l'architecture MVC du backend et du modèle de données (établissements, catégories, produits, réservations, avis)",
+      "Découpage du projet en deux dépôts (backend Laravel / frontend React) communiquant via API REST",
+      "Développement en cours du backend (authentification, rôles, CRUD établissements et menu)",
+      "Développement en cours du frontend React (recherche, panier de pré-commande, dashboards)",
+    ],
+    results: ["Projet en cours de développement — cahier des charges finalisé, architecture posée"],
+   
+    coverImage:"/images/projects/Reservy-cover.png" ,
+    // gallery: [], // captures d'écran à ajouter au fur et à mesure du développement
+    gallery: [],
+    repositories: [
+      {
+        label: "Backend (Laravel)",
+        url: "https://github.com/AITABBOUyoussef/reservy-backend",
+      },
+      {
+        label: "Frontend (React)",
+        url: "https://github.com/AITABBOUyoussef/reservy-frontend",
+      },
+    ],
+    demoUrl: null,
+    externalResources: [],
+  },
+  {
     id: "PRJ-003",
     name: "GameVault",
     type: "web",

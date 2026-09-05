@@ -7,6 +7,16 @@ function Avatar() {
     profile.lastName?.[0] ?? ""
   }`.toUpperCase();
 
+   if (profile.avatar) {
+    return (
+      <img
+        src={profile.avatar}
+        alt={`${profile.firstName ?? ""} ${profile.lastName ?? ""}`}
+        className="mx-auto mb-6 h-24 w-24 rounded-full object-cover ring-2 ring-accent/40"
+      />
+    );
+  }
+
   return (
     <div
       className="mx-auto mb-6 flex h-24 w-24 items-center justify-center rounded-full bg-slate-800 text-2xl font-semibold text-accent ring-2 ring-accent/40"

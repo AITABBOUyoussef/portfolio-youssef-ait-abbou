@@ -11,7 +11,7 @@ function Projects() {
     <section id="projets" className="max-w-6xl mx-auto px-4 py-16">
       <h2 className="text-2xl font-semibold text-slate-100">Mes projets</h2>
       <p className="mt-2 text-sm text-slate-400">
-        Trois projets réalisés dans le cadre de ma formation, illustrant mes
+        Les projets réalisés dans le cadre de ma formation, illustrant mes
         compétences Full-Stack.
       </p>
 

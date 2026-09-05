@@ -14,9 +14,7 @@ export const profile = {
   location: "Beni Mellal, Maroc",
   mobility: "Tout le Maroc, ouvert au mode hybride et remote",
   availability: "Immédiate",
-  avatar: {
-    type: "initials", // pas de photo fournie — cf. 02-CONTENT-SPEC.md
-  },
+  avatar:"/images/youssef.jpg",
   linkedinUrl: "https://www.linkedin.com/in/youssef-ait-abbou",
   githubUrl: "https://github.com/AITABBOUyoussef",
   cvUrl: "/cv/CV_Youssef_Ait_Abbou_Dev_FullStack.pdf",
@@ -78,7 +76,7 @@ export const experiences = [
     id: "EXP-002",
     role: "Stagiaire en Maintenance Industrielle",
     company: "Groupe OCP",
-    period: "Juillet 2023",
+    period: "Juillet 2025",
     missions: [
       "Maintenance moteurs/alternateurs",
       "Contrôle qualité post-intervention et respect des normes de sécurité",
